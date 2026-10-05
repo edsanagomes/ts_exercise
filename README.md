@@ -54,5 +54,5 @@ You can also run linting and formatting from the command line :
 
 ```shell
 deno fmt
-deno lint
+deno lint   
 ```
