@@ -7,11 +7,9 @@
  * improve the autocomplete experience in your editor.
  */
 
-export function removeNumbersBelowThreshold(
-  array: number[],
-  threshold: number,
-): number[] | [] {
-  // Write your code here
+export function removeNumbersBelowThreshold // Remove the numbers that are below the limit
+(array: number[], threshold: number): number[] | [] {
+  return array.filter((number) => number >= threshold);
 }
 
 export function filterStringByLength(
@@ -19,9 +17,11 @@ export function filterStringByLength(
   minLength: number,
   maxLength: number,
 ): string[] | [] {
-  // Write your code here
+  return array.filter((word) =>
+    word.length >= minLength && word.length <= maxLength
+  );
 }
 
 export function getOnlyTheLowercaseLettersOfTheString(string: string): string {
-  // Write your code here
+  return string.replace(/[^a-z]/g, "");
 }
